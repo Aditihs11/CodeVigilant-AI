@@ -1,0 +1,65 @@
+# ==============================================================================
+# CodeVigilant AI — Root .gitignore
+# ==============================================================================
+
+# Environment variable files (NEVER commit secrets to public repositories)
+**/.env
+**/.env.*
+!**/.env.example
+
+# Dependencies
+**/node_modules/
+node_modules/
+**/venv/
+venv/
+.venv/
+env/
+ENV/
+
+# Build & Dist Outputs
+**/dist/
+dist/
+dist-ssr/
+**/build/
+build/
+*.egg-info/
+
+# Python caches and bytecode
+**/__pycache__/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Local databases, vectors, and uploads
+*.db
+*.sqlite
+*.sqlite3
+**/chroma_db/
+chroma_db/
+**/uploads/
+uploads/
+**/scratch/
+scratch/
+**/reports/*.pdf
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# IDE, OS, and System metadata
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+Desktop.ini
